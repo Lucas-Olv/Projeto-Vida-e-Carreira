@@ -1,0 +1,74 @@
+:root
+{
+	scroll-behavior: smooth;
+	--base-white-color: rgba(255, 255, 255, 100%);
+	--base-gray-color: rgba(180, 180, 180, 50%);
+	--base-hover-color: #ffc107;
+	--base-first-letter-color: #ffc107;
+}
+
+.first-letter-uppercase:first-letter
+{
+	color: var(--base-first-letter-color);
+	font-size: 2.5rem;
+}
+
+
+.card-background__override
+{
+	background-color: var(--base-white-color);
+}
+
+@media screen and (max-width: 767px) 
+{
+	.mobile-navbar-padding {padding: 1.3vh;}
+}
+
+#home
+{
+	background-color: var(--base-white-color);
+}
+
+.navbar__link:hover 
+{
+	background-color: var(--base-hover-color); 
+} 
+
+.header-container
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+#header-scroll-icon
+{
+	font-size: 2.3rem; 
+	padding: 0; 
+	margin: 0;
+}
+
+.main
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(1, 1fr));
+	margin-top: 5vh;
+}
+
+.main .card
+{
+	border: none;
+}
+
+.footer-container
+{
+	background-color: var(--base-white-color);
+	font-size: .85em;
+}
+
+.footer-container a
+{
+	text-decoration: none;
+}
